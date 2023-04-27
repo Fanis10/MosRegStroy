@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+</head>
+
+
+<body>
+	
+	<section class="nav">
+		<div class="container">
+			<ul class="nav__list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="service.html">Услуга</a></li>
+
+				<li>
+					<button class="modal-btn btn-yellow" data-modal="contactModal">Модальное окно</button>
+				</li>
+			</ul>
+
+			<div class="modal" id="contactModal">
+				<div class="modal__dialog">
+					<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13 1L1 13M1 1L13 13" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</button>
+					<div class="modal__content">
+						<h3 class="modal-title">Заголовок</h3>
+						<form class="modal-form">
+							<fieldset class="modal-form__group">
+								<span>Ваше имя</span>
+								<input type="text" placeholder="">
+							</fieldset>
+							<fieldset class="modal-form__group">
+								<span>Телефон</span>
+								<input type="tel" placeholder="">
+							</fieldset>
+							<fieldset class="modal-form__group">
+								<button class="modal-form__btn btn-yellow">Отправить</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
